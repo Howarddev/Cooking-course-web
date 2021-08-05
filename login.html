@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
+
+    <title>會員登入</title>
+</head>
+<body>
+    <!--  -->
+    
+    
+<div class='card-wrapper'>
+  <h1 class='call-to-action'>會員登入</h1>
+  
+  <form>
+    
+    <div class='field'>
+      <label for='username'>使用者帳號</label><br>
+      <i class='bx bx-user'></i>
+      <input type='text' 
+           id='username' 
+           name='username' 
+           placeholder='Email 或 ID',
+           spellcheck='false'/>
+    </div>
+    
+    <div class='field'>
+     <label for='pwd' name='pwd'>密碼</label><br>
+      <i class='bx bx-lock-alt' ></i>
+    <input type='password' 
+           id='pwd' 
+           name='pwd' 
+           placeholder='請輸入8-12位中英數字'/>
+    </div>
+    <a href='#'><span>忘記密碼?</span></a>
+    <input type='submit' id = 'login-button' value='LOGIN'/>
+    
+  </form>
+  
+  <div class='alternate-logins'>
+    快速登入
+    <div class='social-links'>
+      <i class='bx bxl-google' ></i>
+      <i class='bx bxl-facebook' ></i>
+    </div>
+  </div>
+  
+  <div class='sign-up'>
+    <a href="#">註冊</a>
+  </div>
+</div>
+<div>
+<video autoplay muted loop>
+        <source src="./img/loginvid.mp4" type="video/mp4">
+    </video>    
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="lecture.css">
+    <title>課程頁面</title>
+</head>
+<body>
+    <nav id="navigatorBar">
+        <a href="index.html">
+            <li id="mainlogo">
+                <img src="img/coolking_logo_verti_green.png" alt="Alchemy logo">
+            </li> 
+        </a>
+        <a href="index.html">
+            <li class="navTitle">
+                首頁
+            </li>
+        </a>
+        <a href="about_us.html">
+            <li class="navTitle">
+                關於我們
+            </li>
+        </a>
+        <a href="">
+            <li class="navTitle">
+                課程介紹
+            </li>
+        </a>
+        <a href="chef.html">
+            <li class="navTitle">星級名廚</li>
+        </a>
+        <a href="">
+            <li class="navTitle">我的課程</li>
+        </a>
+        <a href="login.html">
+            <li class="navTitle">登入/註冊</li>
+        </a>
+    </nav>
+<!-- video -->
+    <div id="wrap1">
+        <div class="container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iCzTTyYWUIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+<!-- discussion -->
+    <div id="wrap2">
+        <div class="container">
+<!-- TAB -->
+           <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'discussion')">問題討論</button>
+              <button class="tablinks" onclick="openCity(event, 'intro')">課程簡介</button>
+              <button class="tablinks" onclick="openCity(event, 'reviews')">課程評價</button>
+              <button class="tablinks" onclick="openCity(event, 'photo')">料理照片</button>
+           </div>
+           <!-- 內容 -->
+           <!-- 問題討論 -->
+           <div id="discussion" class="tabcontent">
+
+
+             
+               <h3>London</h3>
+               <p>London is the capital city of England.</p>
+           </div>
+           <!-- 課程簡介 -->
+           <div id="intro" class="tabcontent" style="display: block;">
+             <h2>泰式綠咖哩</h2>
+             <h3>學習重點 -</h3>
+             <p>
+                泰式綠咖哩：使用雞肉、各式蔬菜和綠咖哩醬，做出泰式咖哩。<br>
+                咖哩炒蝦：學習泰式咖哩炒蝦的製作方式。<br>
+                燻鮭生春捲沙拉：學習生春捲皮的使用方式以及捲的技巧。<br>
+                鮮果拌椰奶：使用夏季水果和椰奶做成的甜點。
+            </p> 
+            <a href="">
+                <h3 class="recipe">食譜PDF下載</h3>
+            </a>
+           </div>
+           <!-- 課程評價 -->
+           <div id="reviews" class="tabcontent">
+             <h3>Tokyo</h3>
+             <p>Tokyo is the capital of Japan.</p>
+           </div>
+           <!-- 料理照片 -->
+           <div id="photo" class="tabcontent">
+             <h2>學員料理成果</h2>
+             <div class="row"> 
+                <div class="column">
+                  <img src="./img/food1.jpg" style="width:100%">
+                  <img src="./img/food2.jpg" style="width:100%">
+                  <img src="./img/food3.jpg" style="width:100%">
+                  <img src="./img/food4.jpg" style="width:100%">
+                  <img src="./img/food5.jpg" style="width:100%">
+                  <img src="./img/food6.jpg" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="./img/food5.jpg" style="width:100%">
+                  <img src="./img/food3.jpg" style="width:100%">
+                  <img src="./img/food1.jpg" style="width:100%">
+                  <img src="./img/food6.jpg" style="width:100%">
+                  <img src="./img/food4.jpg" style="width:100%">
+                  <img src="./img/food2.jpg" style="width:100%">
+                </div>  
+                <div class="column">
+                  <img src="./img/food4.jpg" style="width:100%">
+                  <img src="./img/food1.jpg" style="width:100%">
+                  <img src="./img/food2.jpg" style="width:100%">
+                  <img src="./img/food6.jpg" style="width:100%">
+                  <img src="./img/food3.jpg" style="width:100%">
+                  <img src="./img/food5.jpg" style="width:100%">
+                </div>
+                <!-- <div class="column">
+                  <img src="./img/food3.jpg" style="width:100%">
+                  <img src="./img/food6.jpg" style="width:100%">
+                  <img src="./img/food5.jpg" style="width:100%">
+                  <img src="./img/food2.jpg" style="width:100%">
+                  <img src="./img/food1.jpg" style="width:100%">
+                  <img src="./img/food4.jpg" style="width:100%">
+                </div> -->
+              </div>
+           </div> 
+
+
+
+<!-- TAB END -->
+
+<!-- TAB JAVASCRIPT -->
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+<!-- JS end -->
+
+
+
+        </div>
+    </div>
+
+<!-- footer -->
+    <div id="wrap3">
+        <div class="container">
+            
+        </div>
+    </div>
+
+
+</body>
+</html>

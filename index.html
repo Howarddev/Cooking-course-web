@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>CoolKing</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+</head>
+<body>
+    <nav id="navigatorBar">
+        <a href="index.html">
+            <li id="mainlogo">
+                <img src="img/coolking_logo_verti_green.png" alt="Alchemy logo">
+            </li> 
+        </a>
+        <a href="index.html">
+          <li class="navTitle" style="color: rgb(114, 167, 9); font-weight: bold;">
+              首頁
+          </li>
+        </a>
+        <a href="about_us.html">
+            <li class="navTitle">
+                關於我們
+            </li>
+        </a>
+        <a href="">
+            <li class="navTitle">
+                課程介紹
+            </li>
+        </a>
+        <a href="chef.html">
+            <li class="navTitle">星級名廚</li>
+        </a>
+        <a href="">
+            <li class="navTitle">我的課程</li>
+        </a>
+        <a href="login.html">
+            <li class="navTitle">登入/註冊</li>
+        </a>
+    </nav>
+
+
+    <div id="wrap1">
+        <!-- 漂浮物 -->
+        <div id="spaghetti">
+            <img src="img/Spaghetti.png" alt="">
+        </div>
+        <div id="pasta">
+            <img src="img/Pasta.png" alt="">
+        </div>
+        <div id="tomato">
+            <img src="img/Tomato.png" alt="">
+        </div>
+        <div id="leaf">
+            <img src="img/Leaf.png" alt="">
+        </div>
+        <!-- 漂浮物 -->
+        <div class="container">
+            <img class="woman" src="img/woman.png" alt="cooking woman">
+            <div id="mainTitle1">
+                <h3 class="brownFont1">行動料理教室</h3>
+                <p class="w1">什麼是幸福人生？</p>
+                <p class="w1">生活點滴 浮光掠影？</p>
+                <p class="w1">還有<span class="bigger">美味料理！</span></p>
+                <button class="bts1">
+                   Get Started
+                </button>
+        </div>
+    </div>
+    <div id="wrap2">
+        <!-- 漂浮物 -->
+        <div id="plate1">
+            <img src="img/plate1.png" alt="">
+        </div>
+        <div id="plate2">
+            <img src="img/plate2.png" alt="">
+        </div>
+        <!-- 漂浮物 -->
+        <div class="container">
+            <h3 class="brownFont">自煮非難事</h3>
+            <div class="flexBox">
+                <div class="paragraph45">
+                    <p>
+                        XXX 擁有來自各國的知名主廚，讓您在家也能享受米其林等級的廚藝教學。如有烹飪上的問題，主廚們也會親自為您解惑。
+                    </p>
+                    <button>
+                        Get Started!
+                    </button>
+                    
+                </div>
+                <img class="img45" src="img/pic1.png" alt="">
+            </div>
+            
+            
+
+        </div>
+    </div>
+
+    <div id="wrap3">
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-block w-100" id="carouselpic1"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>全球知名米其林主廚</h3>
+                      <p>CoolKing 擁有來自各國的知名主廚，讓您在家也能享受米其林等級的廚藝教學。<br>
+                        如有烹飪上的問題，主廚們也會親自為您解惑。</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block w-100" id="carouselpic2"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>隨時隨地都能輕鬆學習</h3>
+                      <p>不管是手機、平板還是筆電都能隨時上課</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/delivery.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>免去採購食材<br>
+                        完整新鮮食材直接送到家!</h3>
+                      <p>於購買課程時可加購該課程所需之食材，免去採購麻煩。<br>
+                        疫情期間更能讓你 安心在家防疫 輕鬆料理。</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>         
+    </div>
+    <!-- 註冊表單 -->
+    <div id="wrap4">
+        <div class="container">
+            <h1 class="ww" >快來註冊</h1>
+            <h5 class="ww" >新會員享有一堂免費試聽，趕快一起料理吧!!</h5>
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">姓</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="姓">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">名</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="名">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Email</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">密碼</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="請輸入8-12位英數字需有大小寫">
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      訂閱電子報，不錯過任何最新消息!
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">立即註冊</button>
+              </form>
+        </div>
+    </div>
+        <div class="p-3 mb-2 bg-secondary text-white">Copyright © 2021 CoolKing 保留一切權利。</div>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
